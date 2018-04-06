@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad8af3a630c5aaf41cb4c34e85f43c43",
+    "content-hash": "82e5eecddf586d15aaa67576285d4445",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -121,6 +121,55 @@
                 "schedule"
             ],
             "time": "2017-10-12T15:59:13+00:00"
+        },
+        {
+            "name": "heydavid713/neo4jphp",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heydavid713/neo4jphp.git",
+                "reference": "30962925fb160a0efd7a021e4e5d0581404fac16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heydavid713/neo4jphp/zipball/30962925fb160a0efd7a021e4e5d0581404fac16",
+                "reference": "30962925fb160a0efd7a021e4e5d0581404fac16",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phing/phing": "2.6.*",
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Everyman\\Neo4j": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Adell",
+                    "email": "josh.adell@gmail.com",
+                    "homepage": "http://joshadell.com"
+                }
+            ],
+            "description": "Wrapper for the Neo4j graph database REST interface",
+            "homepage": "http://github.com/jadell/neo4jphp/wiki",
+            "keywords": [
+                "database",
+                "graph",
+                "neo4j"
+            ],
+            "time": "2015-12-30T15:32:55+00:00"
         },
         {
             "name": "illuminate/auth",
@@ -2186,6 +2235,67 @@
             "time": "2018-02-22T10:50:29+00:00"
         },
         {
+            "name": "vinelab/neoeloquent",
+            "version": "v1.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Vinelab/NeoEloquent.git",
+                "reference": "da70dd1aad746c502cfa98eb7056b106bae48abc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Vinelab/NeoEloquent/zipball/da70dd1aad746c502cfa98eb7056b106bae48abc",
+                "reference": "da70dd1aad746c502cfa98eb7056b106bae48abc",
+                "shasum": ""
+            },
+            "require": {
+                "heydavid713/neo4jphp": "0.1.*",
+                "illuminate/console": "5.6.*",
+                "illuminate/database": "5.6.*",
+                "illuminate/events": "5.6.*",
+                "illuminate/pagination": "5.6.*",
+                "illuminate/support": "5.6.*",
+                "nesbot/carbon": "~1.0",
+                "php": ">=7.1.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "1.0",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Vinelab\\NeoEloquent\\NeoEloquentServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vinelab\\NeoEloquent\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abed Halawi",
+                    "email": "abed.halawi@vinelab.com"
+                }
+            ],
+            "description": "Laravel wrapper for the Neo4j graph database REST interface",
+            "keywords": [
+                "database",
+                "graph",
+                "laravel",
+                "neo4j",
+                "neoeloquent"
+            ],
+            "time": "2018-03-13T12:32:51+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v2.4.0",
             "source": {
@@ -3147,16 +3257,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "6.0.1",
+            "version": "6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "e3249dedc2d99259ccae6affbc2684eac37c2e53"
+                "reference": "3f5ca97eee66a07951d018f6726017629c85c86d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/e3249dedc2d99259ccae6affbc2684eac37c2e53",
-                "reference": "e3249dedc2d99259ccae6affbc2684eac37c2e53",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/3f5ca97eee66a07951d018f6726017629c85c86d",
+                "reference": "3f5ca97eee66a07951d018f6726017629c85c86d",
                 "shasum": ""
             },
             "require": {
@@ -3174,7 +3284,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.0.x-dev"
+                    "dev-master": "6.1-dev"
                 }
             },
             "autoload": {
@@ -3199,7 +3309,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2018-02-15T05:27:38+00:00"
+            "time": "2018-04-06T08:14:40+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

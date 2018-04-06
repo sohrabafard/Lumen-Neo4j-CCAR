@@ -6,9 +6,9 @@ use Vinelab\NeoEloquent\Eloquent\Model as NeoEloquent;
 //use NeoEloquent;
 use Vinelab\NeoEloquent\Eloquent\SoftDeletes;
 
-class User extends NeoEloquent
+class Category extends NeoEloquent
 {
     use SoftDeletes;
-    protected $label = 'User';
+    protected $label = 'Category';
 
 }
